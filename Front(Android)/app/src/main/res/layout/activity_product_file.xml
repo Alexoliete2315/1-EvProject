@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".productFile.view.ProductFile">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/imgProductFile"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRateHuge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:alpha="0.9"
+            android:shadowColor="@color/black"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:text="RATE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/nombreProductFile"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Nombre del Producto"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgProductFile" />
+
+    <TextView
+        android:id="@+id/precioProductFile"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginEnd="25dp"
+        android:gravity="center"
+        android:text="PRECIO"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/nombreProductFile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nombreProductFile" />
+
+    <TextView
+        android:id="@+id/marcaProductFile"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="MARCA PRODUCTO"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombreProductFile" />
+
+    <TextView
+        android:id="@+id/vendedorProductFile"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="VENDEDOR"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/marcaProductFile" />
+
+    <TextView
+        android:id="@+id/descripcionProductFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:paddingStart="10dp"
+        android:text="DESCRIPCION DEL PRODUCTO"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vendedorProductFile" />
+
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/btnRateSmall"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:text="RATE"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/vendedorProductFile"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/materialButton2"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/vendedorProductFile" />-->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginEnd="10dp"
+        android:text="BUY"
+        app:layout_constraintBottom_toBottomOf="@+id/vendedorProductFile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vendedorProductFile" />
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageButton
+            android:id="@+id/btnHomeFooter"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:src="@drawable/home_icon"/>
+
+        <ImageButton
+            android:id="@+id/btnBetterRates"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:src="@drawable/star_icon"/>
+
+        <ImageButton
+            android:id="@+id/btnProfile"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:src="@drawable/profile_icon"/>
+
+        <ImageButton
+            android:id="@+id/btnMostSells"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:src="@drawable/sells_icon"/>
+
+        <ImageButton
+            android:id="@+id/btnBuys"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:src="@drawable/cart_icon"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

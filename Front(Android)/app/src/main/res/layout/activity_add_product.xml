@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".addProduct.view.AddProduct">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="177dp"
+        android:text="ADD PRODUCT"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/my_secondary"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        android:layout_marginTop="65dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewIdProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Id Product" />
+
+            <EditText
+                android:id="@+id/editTextIdProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="Id product" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+
+
+            <TextView
+                android:id="@+id/textViewNombreProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product Name" />
+
+            <EditText
+                android:id="@+id/editTextProductName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Product Name" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+
+            <TextView
+                android:id="@+id/textViewPriceProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price Product" />
+
+            <EditText
+                android:id="@+id/editTextPriceProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="Price Product" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+
+            <TextView
+                android:id="@+id/textViewMarcaProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Marca Product" />
+
+            <EditText
+                android:id="@+id/editTextMarcaProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Marca Product" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+
+            <TextView
+                android:id="@+id/textViewDateUpload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date Upload" />
+
+            <EditText
+                android:id="@+id/editTextDateUpload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date"
+                android:text="Date" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+
+
+            <TextView
+                android:id="@+id/textViewDescriptionProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description" />
+
+            <EditText
+                android:id="@+id/editTextDescriptionProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Description" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+
+            <TextView
+                android:id="@+id/textViewImageProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Image" />
+
+            <EditText
+                android:id="@+id/editTextImageProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Image.jpg/.png" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRetunProducts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Return To My Products"
+            android:backgroundTint="@color/black"
+            app:layout_constraintBottom_toTopOf="@id/btnAddProduct"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnAddProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add this Product"
+            android:backgroundTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
